@@ -5,6 +5,7 @@ import Contact from './views/Contact.vue'
 import Projects from './views/Projects.vue'
 import Institutional from './views/Institutional.vue'
 import Partners from './views/Partners.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -33,9 +34,14 @@ export default new Router({
       component: Partners
     },
     {
-      path: '/Institutional',
+      path: '/institutional',
       name: 'institutional',
       component: Institutional
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     }
   ]
 })
