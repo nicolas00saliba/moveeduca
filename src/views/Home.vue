@@ -14,7 +14,6 @@
       </v-flex>
     </v-container>
     <Apareca/>
-    <Footer/>
   </v-container>
 </template>
 
@@ -27,7 +26,6 @@ import HelloWorld from '../components/HelloWorld';
 import AboutFacig from '../components/AboutFacig';
 import MidiaArticles from '../components/MidiaArticles';
 import SocialMidia from '../components/SocialMidia';
-import Footer from '../components/Footer';
 import Apareca from '../components/Apareca';
 
 export default {
@@ -37,7 +35,6 @@ export default {
     AboutFacig,
     MidiaArticles,
     SocialMidia,
-    Footer,
     Apareca,
   },
   data: () => ({

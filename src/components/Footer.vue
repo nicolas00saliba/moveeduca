@@ -2,7 +2,7 @@
   <v-container fluid ma-0 xs12 pa-0 md12 lg12
     class="d-flex accent flex-column"
   >
-    <v-flex xs12 md12 
+    <!-- <v-flex xs12 md12 
       class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row footer"
     >
       <v-flex xs12 md5 class="footer-content">
@@ -38,7 +38,7 @@
           Topo
         </v-btn>
       </v-flex>
-    </v-flex>
+    </v-flex> -->
     <v-divider></v-divider>
     <v-flex fluid ma-0 xs12 md12 lg12>
       <v-card-actions class="accent justify-center">
