@@ -7,15 +7,48 @@
       <v-flex xs12 md9 lg9 class="">
         <CardAbout v-for="project in projects" :key="project.name" v-bind:project="project"></CardAbout>
       </v-flex>
-      <v-flex xs12 md3 lg3 flex-column secondary class="">
-        <Aside/>
+      <v-flex xs12 md3 lg3 secondary class="scribble-background">
+        <!-- <v-parallax
+          dark
+          :src="require('../../assets/scribbles/scribbles-scribbles-52.png')"
+        > -->
+          <Aside/>
+        <!-- </v-parallax> -->
       </v-flex>
     </v-container>
   </div>
 </template>
 
 <style>
+  .scribble-background {
+    position: relative;
+    overflow: hidden;
+    /* transform: rotate(30deg); */
+    background-image: url('../../assets/scribbles/scribbles-scribbles-88-white.png');
+    /* background-image: url('../../assets/logo-branca.png'); */
 
+    background-size: 100%;
+    background-repeat: repeat-y;
+    /* transition: all 0.7s ease; */
+    /* animation: shake 4s linear 0 infinite normal none; */
+  }
+  /* @keyframes shake {
+    0% {
+      -webkit-transform: rotate(0deg)
+    }
+    25% {
+      -webkit-transform: rotate(45deg)
+    }
+    50% {
+      -webkit-transform: rotate(90deg)
+    }
+    75% {
+      -webkit-transform: rotate(45deg)
+    }
+    100% {
+      -webkit-transform: rotate(0deg)
+    }
+  } */
 </style>
 
 <script>
@@ -126,14 +159,14 @@ export default {
         }
       },
       {
-        name: '',
-        description: "",
+        name: 'Assessoria e Treinamento',
+        description: "Nossos associados oferecem assessoria para profissionais da educação e insitituições públicas, privadas e sem fins lucrativos que buscam novos projetos, modernização burocrática e pedagógica. Temos treinamentos em diferentes subtópicos de educação: Aprendizagem Baseada em Projetos, Problemas Globais do conhecimento como avaliar, tecnologia da informação e computação na educação etc.",
         img: {
-          src: require('../../assets/projects/volunteer-classes/blackboard-class2.svg'),
-          alt: "professor e aluna",
+          src: require('../../assets/projects/diploma-patent.svg'),
+          alt: "Diploma genérico",
         },
         action1: {
-          name: 'Participar',
+          name: 'Contratar',
           path: '/comingsoon'
         },
         action2: {
@@ -142,11 +175,11 @@ export default {
         }
       },
       {
-        name: '',
-        description: "",
+        name: 'Graduação ?',
+        description: "Esse projeto foi pensado pelos universitários que são associados da Move&Educa. O principal objetivo é levar adolescentes para conhecer as diferentes universidades, os diversos campus e uma grande variedade de cursos para que eles possam, além de descobrir qual curso fazer, descobrir a instituição que se adequa melhor ao seu perfil.",
         img: {
-          src: require('../../assets/projects/volunteer-classes/blackboard-class2.svg'),
-          alt: "professor e aluna",
+          src: require('../../assets/projects/graduation.svg'),
+          alt: "Diploma em rolo e chapéu de graduação",
         },
         action1: {
           name: 'Participar',

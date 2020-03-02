@@ -3,14 +3,14 @@
         <v-flex xs12 md12 lg12 class="d-flex flex-column align-center">
             <v-btn
                 color="accent"
-                class="headline font-weight-black my-5"
+                class="title font-weight-black my-5"
                 to="/comingsoon"
             >
                 Apoie essa Causa
             </v-btn>
             <v-card
                 class="mx-auto my-5"
-                max-width="344"
+                max-width="90%"
                 outlined
             >
                 <v-list-item three-line>
@@ -37,7 +37,7 @@
             </v-card>
             <v-card
                 class="mx-auto my-5"
-                max-width="344"
+                max-width="90%"
                 outlined
             >
                 <v-list-item three-line>
