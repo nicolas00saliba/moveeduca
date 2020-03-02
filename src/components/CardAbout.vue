@@ -13,6 +13,7 @@
                         :src="project.img.src"
                         :alt="project.img.alt"
                         class=""
+                        style="border-radius: 50%;"
                     ></v-img>
                 </v-flex>
                 <v-flex xs12 md9 class="d-flex align-stretch flex-column">
@@ -33,6 +34,7 @@
                     <v-card-actions class="d-flex flex-row justify-end align-end">
                         <!-- <v-spacer></v-spacer>    -->
                         <v-btn 
+                            v-if="project.action2.path"
                             :class="{'title': $vuetify.breakpoint.mdAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
                             :to="project.action2.path" 
                             text
