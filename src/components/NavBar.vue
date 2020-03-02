@@ -12,50 +12,61 @@
               color="darkblue"
             >{{ item.title }}</v-btn>
           </v-toolbar-items>
-          <v-btn
-            class="d-flex d-sm-none"
-            color="blue"
-            dark
-            @click.stop="drawer = !drawer"
-            right
-          >
-            <v-icon class="ma-2">mdi-menu</v-icon>
-          </v-btn>
-        <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
+          <v-container class="d-flex d-sm-none justify-space-between">
+            <h4 style="color: white; font-style: italic; font-family: 'Indie Flower';"> Move&Educa </h4>
+            <v-btn
+              color="blue"
+              dark
+              @click.stop="drawer = !drawer"
+              right
+            >
+              <v-icon class="ma-2">mdi-menu</v-icon>
+            </v-btn>
+          </v-container>
+        <!-- <v-spacer></v-spacer> -->
 
       </template>
       <v-container fluid ma-0 pa-0>
         <v-layout row wrap align-center>
-          <v-img
-            :src="require('../assets/logo-branca.png')"
-            height="120"
-            max-height="180"
-            max-width="200"
-            contain
-            class=""
-          ></v-img>
-          <v-spacer ></v-spacer>
-          <v-flex row xs3 md3 sm3 right>
-            <v-spacer></v-spacer>
-            <v-btn
-              href="https://api.whatsapp.com/send?phone=5561994234712&text=Estou%20entrando%20em%20contato%20depois%20de%20ver%20o%20site%20da%20FACIG."
-              target="_blank"
-              color="accent"
-              class="d-none d-sm-block"
+          <v-flex md9 sm12 
+            class="d-flex align-center flex-row"
+            :class="{'justify-center': $vuetify.breakpoint.smAndDown}"
+          >
+            <v-img
+              :src="require('../assets/logo-branca.png')"
+              height="120"
+              max-height="180"
+              max-width="200"
+              contain
+            ></v-img>
+            <h1
+              class="navbar-title d-none d-sm-block"
+              style=""
             >
-              <span class="ma-2 font-weight-black">Associe-se</span>
-            </v-btn>
-            <v-spacer></v-spacer>
-            <v-btn
-              to="/Login"
-              target=""
-              color="white"
-              icon outlined fab small
-              class="d-none d-sm-block"
-            >
-              <v-icon class="ma-2">mdi-account</v-icon>
-            </v-btn>
-            <v-spacer></v-spacer>
+              Movimento em Defesa da Educação
+            </h1>
+          </v-flex>
+          <v-flex xs3 md3 sm3 class="d-none d-sm-block">
+            <v-flex xs12 class="d-flex justify-space-around">
+              <v-btn
+                href="https://api.whatsapp.com/send?phone=5561994234712&text=Estou%20entrando%20em%20contato%20depois%20de%20ver%20o%20site%20da%20FACIG."
+                target="_blank"
+                color="accent"
+                class=""
+              >
+                <span class="ma-2 font-weight-black">Associe-se</span>
+              </v-btn>
+              <v-btn
+                to="/Login"
+                target=""
+                color="white"
+                icon outlined fab small
+                class=""
+              >
+                <v-icon class="ma-2">mdi-account</v-icon>
+              </v-btn>
+            </v-flex>
           </v-flex>
         </v-layout>
       </v-container>
@@ -110,6 +121,21 @@
     </v-navigation-drawer>
   </nav>
 </template>
+
+<style>
+  .navbar-title {
+    margin-left: 20px; 
+    color: white; 
+    font-style: italic; 
+    font-family: 'Indie Flower';
+  }
+  /* @media screen and (max-width: 960px) {
+    .navbar-title {
+      margin-left: 10px;
+      font-size: 1em;
+    }
+  } */
+</style>
 
 <script>
 export default {

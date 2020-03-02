@@ -10,7 +10,7 @@
 </template>
 
 <style>
-
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 </style>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid ma-0 class="social-midia">
+  <v-container fluid ma-0 secondary class="social-midia radius">
     <div class="d-flex">
       <h1 class="d-flex social-midia-title">Redes Sociais</h1>
     </div>
@@ -15,7 +15,7 @@
           class=""
         ></v-img>
         <div class="text-justify align-center d-flex">
-          instagram.com/<b>facigdf</b>
+          instagram.com/<b>moveeduca</b>
         </div>
       </a>
     </v-flex>
@@ -31,7 +31,7 @@
           class=""
         ></v-img>
         <div class="text-justify align-center d-flex">
-          facebook.com/<b>facigdf</b>
+          facebook.com/<b>moveeduca</b>
         </div>
       </a>
     </v-flex>
@@ -44,7 +44,7 @@
   }
   .social-midia-row {
     margin: 30px 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .social-midia-row a {
     color: #FFFFFF !important;
@@ -52,6 +52,9 @@
   }
   .social-midia-title {
     margin-bottom: 10px;
+  }
+  .radius {
+    border-radius: 10px;
   }
   @media screen and (max-width: 960px) {
     .social-midia-row {

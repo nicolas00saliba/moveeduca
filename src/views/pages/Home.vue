@@ -22,11 +22,11 @@
 </style>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
-import AboutFacig from '../components/AboutFacig';
-import MidiaArticles from '../components/MidiaArticles';
-import SocialMidia from '../components/SocialMidia';
-import Apareca from '../components/Apareca';
+import HelloWorld from '../../components/HelloWorld';
+import AboutFacig from '../../components/AboutFacig';
+import MidiaArticles from '../../components/MidiaArticles';
+import SocialMidia from '../../components/SocialMidia';
+import Apareca from '../../components/Apareca';
 
 export default {
   name: 'App',
