@@ -18,7 +18,7 @@
                 </v-flex>
                 <v-flex xs12 md9 class="d-flex align-stretch flex-column">
                     <v-card-title 
-                        :class="{'display-1': $vuetify.breakpoint.mdAndUp, 'title': $vuetify.breakpoint.smAndDown}"
+                        :class="{'display-1': $vuetify.breakpoint.mdAndUp, 'title justify-center': $vuetify.breakpoint.smAndDown}"
                     >
                             <p>
                                 {{ project.name }}
@@ -68,6 +68,6 @@ export default {
     props: ['project'],
     data: () => ({
         
-    }),
+    })
 }
 </script>

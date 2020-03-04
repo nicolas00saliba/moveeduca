@@ -55,5 +55,17 @@ export default new Router({
       name: 'private-classes',
       component: PrivateClasses
     }
-  ]
+  ],
+  // Vue-router documentation
+  scrollBehavior (to) {
+    if (to) { 
+      window.scroll(0, 0)
+      // return { x: 0, y: 140 } 
+    }
+    // if(from){
+    //   return { x: 0, y: 140 }
+    // } else {
+    //   return { x: 0, y: 0 }
+    // }
+  }
 })

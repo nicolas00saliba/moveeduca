@@ -33,6 +33,7 @@
             class="d-flex align-center flex-row"
             :class="{'justify-center': $vuetify.breakpoint.smAndDown}"
           >
+          <a href="/" class="">
             <v-img
               :src="require('../assets/logo-branca.png')"
               height="120"
@@ -40,12 +41,14 @@
               max-width="200"
               contain
             ></v-img>
+          </a>
             <h1
               class="navbar-title d-none d-sm-block"
               style=""
             >
               Movimento em Defesa da Educação
             </h1>
+          
           </v-flex>
           <v-flex xs3 md3 sm3 class="d-none d-sm-block">
             <v-flex xs12 class="d-flex justify-space-around">

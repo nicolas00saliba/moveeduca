@@ -42,6 +42,7 @@
     <v-divider></v-divider>
     <v-flex fluid ma-0 xs12 md12 lg12>
       <v-card-actions class="accent justify-center">
+        <v-spacer></v-spacer>
         &copy;{{ new Date().getFullYear() }} 
         — Feito por&nbsp;
         <strong>
@@ -63,6 +64,16 @@
             Gama Cidadão
           </a>
         </strong>!
+        <v-spacer></v-spacer>
+        <v-btn
+          class=""
+          text
+          color="black"
+          @click="top"
+        >
+          <v-icon>mdi-arrow-up</v-icon>
+          Topo
+        </v-btn>
       </v-card-actions>
     </v-flex>
   </v-container>

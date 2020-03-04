@@ -60,34 +60,34 @@ export default {
     ],
     items: [
       {
-        src: require('../assets/parceiros/acig-logo.png'),
+        src: require('../assets/partners/acig-logo.png'),
       },
       {
-        src: require('../assets/parceiros/adm-guara.jpg'),
+        src: require('../assets/partners/adm-guara.jpg'),
       },
       {
-        src: require('../assets/parceiros/gdf.png'),
+        src: require('../assets/partners/gdf.png'),
       },
       {
-        src: require('../assets/parceiros/IADES-BRASIL.png'),
+        src: require('../assets/partners/IADES-BRASIL.png'),
       },
       {
-        src: require('../assets/parceiros/guara50-anos.jpg'),
+        src: require('../assets/partners/guara50-anos.jpg'),
       },
       {
-        src: require('../assets/parceiros/sicoob.png'),
+        src: require('../assets/partners/sicoob.png'),
       },
       {
-        src: require('../assets/parceiros/dyamond.png'),
+        src: require('../assets/partners/dyamond.png'),
       },
       {
-        src: require('../assets/parceiros/logo-gama-cidadao.png'),
+        src: require('../assets/partners/logo-gama-cidadao.png'),
       },
       {
-        src: require('../assets/parceiros/logo-morgganas.png'),
+        src: require('../assets/partners/logo-morgganas.png'),
       },
       {
-        src: require('../assets/parceiros/royal.png'),
+        src: require('../assets/partners/royal.png'),
       },
       
     ],
