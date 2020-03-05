@@ -66,13 +66,19 @@
         </strong>!
         <v-spacer></v-spacer>
         <v-btn
-          class=""
-          text
-          color="black"
+          ref="top-btn"
+          fixed
+          fab
+          bottom
+          small
+          v-show="showBtn"
+          right
+          id="top-btn"
+          v-scroll="onScroll"
+          color="accent"
           @click="top"
         >
           <v-icon>mdi-arrow-up</v-icon>
-          Topo
         </v-btn>
       </v-card-actions>
     </v-flex>
@@ -84,6 +90,9 @@
   }
   .footer-title {
     margin-bottom: 10px;
+  }
+  #top-btn {
+    display: none; /* Hidden by default */
   }
   @media screen and (max-width: 960px) {
     .footer-content {
@@ -98,6 +107,15 @@ export default {
 
   }),
   methods:{
+    onScroll () {
+      if (typeof window === 'undefined') return
+      if(window.pageYOffset > 320) {
+        this.$refs["top-btn"].$el.style.display = "block";
+      } else {
+        this.$refs["top-btn"].$el.style.display = "none";
+      }
+      
+    },
     top(){
         window.scrollTo({
           top: 0,
