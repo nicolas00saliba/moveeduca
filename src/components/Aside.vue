@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid ma-0 px-0 py-5 class="secondary">
+    <v-container fluid ma-0 px-0 py-0 class="secondary">
         <v-flex xs12 md12 lg12 class="d-flex flex-column align-center">
             <v-btn
                 color="accent"
@@ -9,7 +9,7 @@
                 Apoie essa Causa
             </v-btn>
             <v-card
-                class="mx-auto my-5"
+                class="mx-0 my-5"
                 max-width="90%"
                 outlined
             >
@@ -36,7 +36,7 @@
                 </v-card-actions>
             </v-card>
             <v-card
-                class="mx-auto my-5"
+                class="mx-0 my-0"
                 max-width="90%"
                 outlined
             >

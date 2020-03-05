@@ -39,7 +39,7 @@
 </template>
 <style>
   .social-midia {
-    padding: 40px 10% 20px 10%;
+    padding: 40px 0 0 5%;
     color: #FFFFFF;
   }
   .social-midia-row {
