@@ -3,7 +3,14 @@ import Vuetify from 'vuetify/lib';
 
 Vue.use(Vuetify);
 
+import en from './i18n/vuetify/en'
+import pt from './i18n/vuetify/pt'
+
 export default new Vuetify({
+  lang: {
+    locales: { pt, en },
+    current: 'pt',
+  },
   icons: {
     iconfont: 'mdi',
   },
