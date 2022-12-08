@@ -44,24 +44,15 @@
       <v-card-actions class="accent justify-center">
         <v-spacer></v-spacer>
         &copy;{{ new Date().getFullYear() }} 
-        — Feito por&nbsp;
+        — {{ $vuetify.lang.t("$vuetify.footer.madeBy") }}
+        &nbsp;
         <strong>
           <a
-            href="https://danrleywillyan-blog.firebaseapp.com"
+            href="https://danrleypereira.com.br"
             target="_blank"
             style="color: black;"  
           >
             Danrley Pereira
-          </a>
-        </strong>
-        &nbsp;do&nbsp;
-        <strong>
-          <a
-            href="https://empresa.gamacidadao.com.br"
-            target="_blank"
-            style="color: black;"
-          >
-            Gama Cidadão
           </a>
         </strong>!
         <v-spacer></v-spacer>
@@ -71,7 +62,6 @@
           fab
           bottom
           small
-          v-show="showBtn"
           right
           id="top-btn"
           v-scroll="onScroll"
