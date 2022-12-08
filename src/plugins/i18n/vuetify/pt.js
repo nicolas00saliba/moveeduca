@@ -161,6 +161,17 @@ export default {
       action2: "Saiba Mais",
     },
   },
+  organanizationPage: {
+    head: "Nossa Organização",
+    whatDoWeDo: "Nossa organização vem sendo um diferencial na vida de várias crianças e adolescentes, atuando em parcerias come escolas, comunidade, outras organizações não lucrativas e com o governo. Nossa principal missão é ser um trampolim para o desenvolvimento pessoal e intelectual dos que por aqui passam. Nós auxiliamos educadores, líderes e figuras públicas na construção de políticas de educação e no treinamento para implementação dessas. ",
+  },
+  roles: {
+    president: "Presidente",
+    financialOfficer: "Diretor Financeiro",
+    managingOfficer: "Diretor Administrativo",
+    generalSecretary: "Secretário Geral",
+    member: "Membro"
+  },
 
   aside: {
     donationButton: "Apoie essa Causa",

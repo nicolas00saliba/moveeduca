@@ -161,6 +161,18 @@ export default {
       action2: "Know More",
     },
   },
+  organanizationPage: {
+    head: "Our Organization",
+    whatDoWeDo: "Our organization has made a difference in the lives of many children and adolescents, working in partnerships with schools, the community, other non-profit organizations and the government. Our main mission is to be a springboard for the personal and intellectual development of those who pass through here. We assist educators, leaders and public figures in the construction of education policies and in training for their implementation.",
+  },
+
+  roles: {
+    president: "President",
+    financialOfficer: "Financial Officer",
+    managingOfficer: "Managing Officer",
+    generalSecretary: "General Secretary",
+    member: "Member"
+  },
 
   aside: {
     donationButton: "Support Us",
