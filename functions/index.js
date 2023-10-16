@@ -2,24 +2,43 @@
 /* eslint-disable indent */
 
 const sgMail = require("@sendgrid/mail");
-const functions = require("firebase-functions");
 const {onRequest} = require("firebase-functions/v2/https");
+const {defineSecret} = require("firebase-functions/params");
 const logger = require("firebase-functions/logger");
+const {setGlobalOptions} = require("firebase-functions/v2");
 
-exports.sendEmail = onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", "*");
+// Set the maximum instances to 10 for all functions
+setGlobalOptions({maxInstances: 10});
+
+const SGapiKey = defineSecret("sendgrid-apikey");
+
+exports.sendEmail = onRequest({secrets: [SGapiKey]}, (request, response) => {
+  const allowedOrigins = [
+    "https://moveeduca.dwcorp.com.br",
+    "https://moveeduca-org.firebaseapp.com",
+  ];
+  const origin = request.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    response.set("Access-Control-Allow-Origin", origin);
+  } else {
+    return response.status(403).send({error: "Forbidden"});
+  }
+
   if (request.method !== "POST") {
     if (request.method === "OPTIONS") {
       response.set("Access-Control-Allow-Methods", "POST");
       response.set("Access-Control-Allow-Headers", "Content-Type");
       response.set("Access-Control-Max-Age", "3600");
-      response.status(204).send("");
+      return response.status(204).send("");
     }
     return response.status(405).send({error: "Method Not Allowed"});
   }
 
+  const apiKey = SGapiKey.value();
+  sgMail.setApiKey(apiKey);
+
   logger.info(`Form submitted by: ${request.body.email}`);
-  sgMail.setApiKey(functions.config().sendgrid.apikey);
   // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "danrleywillian@gmail.com",
