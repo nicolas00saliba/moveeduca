@@ -4,14 +4,14 @@
   >
     <div class="d-flex flex-column">
       <h1 class="d-flex apareca-title justify-center">
-        Compareça na
+        Move & Educa
       </h1>
       <h1 class="d-flex apareca-title justify-center">
-        4ª Edição da FACIG!
+        Instagram
       </h1>
     </div>
     <v-flex class="d-flex flex-row apareca-row justify-center">
-      <a href="https://www.facebook.com/facigdf" target="_blank"
+      <!-- <a href="https://www.facebook.com/facigdf" target="_blank"
         class="d-flex apareca-social-icon"
       >
         <v-img
@@ -23,8 +23,8 @@
           contain
           class=""
         ></v-img>
-      </a>
-      <a href="https://www.instagram.com/facigdf" target="_blank"
+      </a> -->
+      <a href="https://www.instagram.com/moveeducaOSC" target="_blank"
         class="d-flex apareca-social-icon"
       >
         <v-img

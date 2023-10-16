@@ -321,5 +321,9 @@ export default {
   comingSoon: {
     head: "Página em construção...",
     content: "Veja outros páginas que já construímos!"
+  },
+  utils: {
+    about: "Sobre nossa Organização",
+    close: "Fechar"
   }
 };
