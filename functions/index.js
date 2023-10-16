@@ -7,16 +7,20 @@ const {onRequest} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 
 exports.sendEmail = onRequest((request, response) => {
+  response.set("Access-Control-Allow-Origin", "*");
   if (request.method !== "POST") {
     if (request.method === "OPTIONS") {
-        return response.status(204).send();
+      response.set("Access-Control-Allow-Methods", "POST");
+      response.set("Access-Control-Allow-Headers", "Content-Type");
+      response.set("Access-Control-Max-Age", "3600");
+      response.status(204).send("");
     }
     return response.status(405).send({error: "Method Not Allowed"});
   }
 
   logger.info(`Form submitted by: ${request.body.email}`);
   sgMail.setApiKey(functions.config().sendgrid.apikey);
-    // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "danrleywillian@gmail.com",
     from: `taurussoftwaredev@gmail.com`,
