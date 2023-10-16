@@ -324,6 +324,7 @@ export default {
     content: "See other pages we've already built!"
   },
   utils: {
-    about: "About Our Organization"
+    about: "About Our Organization",
+    close: "Close"
   }
 };

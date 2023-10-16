@@ -8,6 +8,9 @@ const logger = require("firebase-functions/logger");
 
 exports.sendEmail = onRequest((request, response) => {
   if (request.method !== "POST") {
+    if (request.method === "OPTIONS") {
+        return response.status(204).send();
+    }
     return response.status(405).send({error: "Method Not Allowed"});
   }
 

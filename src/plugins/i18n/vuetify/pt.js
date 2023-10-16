@@ -323,6 +323,7 @@ export default {
     content: "Veja outros páginas que já construímos!"
   },
   utils: {
-    about: "Sobre nossa Organização"
+    about: "Sobre nossa Organização",
+    close: "Fechar"
   }
 };
