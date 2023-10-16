@@ -15,7 +15,7 @@
             <v-text-field v-model="phone" :rules="phoneRules" :label="this.getTextFromI18n('$vuetify.contactForm.phone.label')"
               :hint="this.getTextFromI18n('$vuetify.contactForm.certo')"></v-text-field>
 
-            <v-select v-model="select" :items="items"
+            <v-select v-model="select" :items="items()"
               :rules="[v => !!v || this.getTextFromI18n('$vuetify.contactForm.item.required')]"
               :label="this.getTextFromI18n('$vuetify.contactForm.item.label')" required></v-select>
 
@@ -70,7 +70,7 @@ export default {
         v => /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/.test(v) || this.getTextFromI18n('$vuetify.contactForm.phone.notValid'),
       ],
       select: null,
-      items: this.getItems(),
+      items: () => this.getItems(),
       checkbox: false,
     }
   },

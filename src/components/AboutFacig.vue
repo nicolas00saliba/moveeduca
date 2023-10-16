@@ -1,7 +1,7 @@
 <template>
   <v-container fluid ma-0 class="primary about-facig">
     <div class="d-flex flex-column about-title justify-center">
-      <h1 class="d-flex"><strong>Sobre nossa Organização</strong></h1>
+      <h1 class="d-flex"><strong>{{ this.$vuetify.lang.t('$vuetify.utils.about') }}</strong></h1>
       <v-flex class="d-flex flex-row">
         <!-- <v-img :src="require('../assets/facig-word.png')" height="70%" max-height="90%" max-width="70%" contain
           class=""></v-img> -->
