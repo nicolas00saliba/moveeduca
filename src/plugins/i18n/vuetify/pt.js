@@ -27,6 +27,44 @@ export default {
     writeMail: "Nos diga o email cadastrado",
     writePassword: "É necessário informar a senha",
   },
+  contactForm: {
+    certo: "Perfeito",
+    name: {
+      label: "Seu Nome",
+      required: "Seu Nome é obrigatório",
+      notValid: "Nome tem que ser menor que 10 caracteres"
+    },
+    email: {
+      required: "Precisamos do seu email",
+      notValid: "Esse email não parece válido"
+    },
+    phone: {
+      label: "Telefone ou Celular",
+      required: "Um telefone brasileiro é necessário",
+      notValid: "O número precisa ter DDD e o mínimo de caracteres"
+    },
+    item: {
+      items: [
+        "Projetos",
+        "Doação",
+        "Transparência",
+        "Seja Membro",
+        "Sou Empresa",
+        "Outros"
+      ],
+      required: "Diga-nos o assunto por favor",
+      label: "Assunto"
+    },
+    agree: {
+      message: "Você concorda que possamos te ligar e/ou mandar email?",
+      required: "Para submeter esse formulário você precisa concordar!"
+    },
+    actions: {
+      submit: "Entre em contato",
+      resetInputs: "Resetar formulário",
+      resetValidation: "Resetar validações"
+    }
+  },
   cards: {
     aid: {
       topic: "Assistência",

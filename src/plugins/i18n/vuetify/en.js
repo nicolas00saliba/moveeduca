@@ -27,6 +27,44 @@ export default {
     writeMail: "Tell us your registered email",
     writePassword: "Write up your password",
   },
+  contactForm: {
+    certo: "Perfect",
+    name: {
+      label: "Your Name",
+      required: "Your Name is required",
+      notValid: "Name must be less than 10 characters"
+    },
+    email: {
+      required: "We need your email",
+      notValid: "This email does not appear valid"
+    },
+    phone: {
+      label: "Your Phone Number",
+      required: "A Brazilian phone is required",
+      notValid: "The number must have DDD and a minimum of characters"
+    },
+    item: {
+      items: [
+        "Projects",
+        "Donation",
+        "Transparency",
+        "Become a Member",
+        "I am Company",
+        "Others"
+      ],
+      required: "Tell us the subject please",
+      label: "Subject"
+    },
+    agree: {
+      message: "Do you agree that we can call you and/or send you an email?",
+      required: "To submit this form you must agree!"
+    },
+    actions: {
+      submit: "Contact us",
+      resetInputs: "Reset form",
+      resetValidation: "Reset validations"
+    }
+  },
   cards: {
     aid: {
       topic: "Aid",
