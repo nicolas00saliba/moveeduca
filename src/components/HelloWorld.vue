@@ -2,7 +2,7 @@
   <v-container fluid ma-0 pa-0>
     <v-layout>
       <v-img
-        :src="require('../assets/facig-capa.png')"
+        :src="require('../assets/capa.png')"
         contain
       ></v-img>
     </v-layout>
@@ -60,10 +60,16 @@ export default {
     ],
     items: [
       {
-        src: require('../assets/partners/acig-logo.png'),
+        src: require('../assets/partners/mlh-removebg.png'),
       },
       {
-        src: require('../assets/partners/adm-guara.jpg'),
+        src: require('../assets/partners/logo-gama-cidadao.png'),
+      },
+      {
+        src: require('../assets/partners/github.png'),
+      },
+      {
+        src: require('../assets/partners/udf-logo.png'),
       },
       {
         src: require('../assets/partners/gdf.png'),
@@ -72,22 +78,16 @@ export default {
         src: require('../assets/partners/IADES-BRASIL.png'),
       },
       {
-        src: require('../assets/partners/guara50-anos.jpg'),
+        src: require('../assets/partners/acig-logo.png'),
       },
       {
-        src: require('../assets/partners/sicoob.png'),
+        src: require('../assets/partners/brasil-sem-drogas-logo-removebg.png'),
       },
       {
-        src: require('../assets/partners/dyamond.png'),
+        src: require('../assets/partners/santos-inocente-logo-removebg.png'),
       },
       {
-        src: require('../assets/partners/logo-gama-cidadao.png'),
-      },
-      {
-        src: require('../assets/partners/logo-morgganas.png'),
-      },
-      {
-        src: require('../assets/partners/royal.png'),
+        src: require('../assets/partners/amigos-do-concurso-removebg.png'),
       },
       
     ],

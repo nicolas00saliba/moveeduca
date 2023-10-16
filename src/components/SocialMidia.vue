@@ -1,10 +1,12 @@
 <template>
   <v-container fluid ma-0 secondary class="social-midia radius">
     <div class="d-flex">
-      <h1 class="d-flex social-midia-title">Redes Sociais</h1>
+      <h1 class="d-flex social-midia-title">
+        {{ $vuetify.lang.t("$vuetify.aside.socialMedia") }}
+      </h1>
     </div>
     <v-flex class="d-flex flex-row social-midia-row">
-      <a href="https://www.instagram.com/facigdf" target="_blank" class="d-flex">
+      <a href="https://www.instagram.com/moveeducaosc/" target="_blank" class="d-flex">
         <v-img
           :src="require('../assets/instagram-icon.svg')"
           min-height="20"
@@ -15,7 +17,7 @@
           class=""
         ></v-img>
         <div class="text-justify align-center d-flex">
-          instagram.com/<b>moveeduca</b>
+          instagram.com/<b>moveeducaOSC</b>
         </div>
       </a>
     </v-flex>
