@@ -22,7 +22,7 @@
       </a>
     </v-flex>
     <v-flex class="d-flex flex-row social-midia-row">
-      <a href="https://www.facebook.com/facigdf" target="_blank" class="d-flex">
+      <!-- <a href="https://www.facebook.com/facigdf" target="_blank" class="d-flex">
         <v-img
           :src="require('../assets/facebook-icon.svg')"
           min-height="20"
@@ -35,7 +35,7 @@
         <div class="text-justify align-center d-flex">
           facebook.com/<b>moveeduca</b>
         </div>
-      </a>
+      </a> -->
     </v-flex>
   </v-container>
 </template>

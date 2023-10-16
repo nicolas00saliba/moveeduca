@@ -2,6 +2,15 @@
   <div class="dashboard">
     <v-container fluid ma-0 pa-0 xs12 md12 class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row">
       <v-flex xs12 md9 lg9 class="">
+        <v-snackbar v-model="snackbar">
+          {{ snackText }}
+
+          <template v-slot:actions>
+            <v-btn color="pink" variant="text" @click="snackbar = false">
+            {{ this.$vuetify.lang.t('$vuetify.utils.close') }}
+            </v-btn>
+          </template>
+        </v-snackbar>
         <h1>Contact</h1>
         <v-flex ma-4>
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -12,10 +21,11 @@
             <v-text-field v-model="email" :rules="emailRules" label="E-mail" required
               :hint="this.getTextFromI18n('$vuetify.contactForm.certo')"></v-text-field>
 
-            <v-text-field v-model="phone" :rules="phoneRules" :label="this.getTextFromI18n('$vuetify.contactForm.phone.label')"
+            <v-text-field v-model="phone" :rules="phoneRules"
+              :label="this.getTextFromI18n('$vuetify.contactForm.phone.label')"
               :hint="this.getTextFromI18n('$vuetify.contactForm.certo')"></v-text-field>
 
-            <v-select v-model="select" :items="items"
+            <v-select v-model="select" :items="items()"
               :rules="[v => !!v || this.getTextFromI18n('$vuetify.contactForm.item.required')]"
               :label="this.getTextFromI18n('$vuetify.contactForm.item.label')" required></v-select>
 
@@ -70,13 +80,44 @@ export default {
         v => /^\s*(\d{2}|\d{0})[-. ]?(\d{5}|\d{4})[-. ]?(\d{4})[-. ]?\s*$/.test(v) || this.getTextFromI18n('$vuetify.contactForm.phone.notValid'),
       ],
       select: null,
-      items: this.getItems(),
+      items: () => this.getItems(),
       checkbox: false,
+      snackbar: false,
+      snackText: '',
     }
   },
   methods: {
     validate() {
-      this.$refs.form.validate()
+      if (this.$refs.form.validate()) {
+        const formData = {
+          name: this.name,
+          email: this.email,
+          phone: this.phone, // Make sure to add the phone input in your form
+          subject: this.select
+        };
+
+        fetch('https://us-central1-moveeduca-org.cloudfunctions.net/sendEmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              this.snackText = data.message;
+            } else {
+              this.snackText = data.message;
+            }
+          })
+          .catch(error => {
+            // eslint-disable-next-line no-console
+            console.error("Failed to send the email:", error);
+            this.snackText =  "Failed to send the email.";
+          })
+          .finally(() => this.snackbar = true );
+      }
     },
     reset() {
       this.$refs.form.reset()

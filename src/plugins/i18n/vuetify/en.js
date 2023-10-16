@@ -322,5 +322,9 @@ export default {
   comingSoon: {
     head: "Page coming soon...",
     content: "See other pages we've already built!"
+  },
+  utils: {
+    about: "About Our Organization",
+    close: "Close"
   }
 };
