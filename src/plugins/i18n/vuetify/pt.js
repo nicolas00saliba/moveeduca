@@ -165,6 +165,7 @@ export default {
     head: "Nossa Organização",
     whatDoWeDo: "Nossa organização vem sendo um diferencial na vida de várias crianças e adolescentes, atuando em parcerias come escolas, comunidade, outras organizações não lucrativas e com o governo. Nossa principal missão é ser um trampolim para o desenvolvimento pessoal e intelectual dos que por aqui passam. Nós auxiliamos educadores, líderes e figuras públicas na construção de políticas de educação e no treinamento para implementação dessas. ",
   },
+
   roles: {
     president: "Presidente",
     financialOfficer: "Diretor Financeiro",
@@ -172,9 +173,26 @@ export default {
     generalSecretary: "Secretário Geral",
     member: "Membro"
   },
-
   aside: {
     donationButton: "Apoie essa Causa",
     socialMedia: "Redes Sociais",
-  }
+  },
+  articles: [
+    {
+      titulo: '1ª Olimpíada de Programação do UDF',
+      portal: 'Gama Cidadão',
+    }
+  ],
+  about: [
+    "Bem-vindo ao Move&Educa, um movimento que tem como objetivo principal despertar a consciência através da educação.",
+    "Fundado em 2020, o Move&Educa opera de maneira autônoma e estabeleceu parcerias com segmentos distintos da sociedade, abrangendo áreas como educação, saúde e assistência social.",
+    "Nossa visão é colaborar com outras instituições de ensino na consolidação das habilidades do século XXI, conforme definido pela UNESCO. Acreditamos no poder da educação transformadora e no potencial de cada ser humano.",
+    "Alinhados aos nossos valores, buscamos a unidade, neutralidade política, respeito, colaboração interna e externa, integridade, sustentabilidade, inovação e transparência em todas as nossas ações e decisões.",
+    "A Move&Educa, desde sua concepção, enfatiza a importância da literacia da informação, pensamento crítico, comunicação, autogestão, consciência global, criatividade, literacia financeira, resiliência, trabalho em equipe e ética.",
+    "Em conformidade com nossos estatutos, o Move&Educa promove a educação em todos os campos do saber, defende o direito ao acesso à educação de qualidade e busca continuamente colaborações e parcerias estratégicas para melhorar a qualidade da educação e promover o bem-estar da comunidade.",
+    "Com um compromisso firme de promover a inclusão, a diversidade e a equidade, o Move&Educa é um defensor ardente dos direitos humanos e se esforça para assegurar que cada iniciativa reflita esses princípios.",
+    "Conforme avançamos, estamos sempre à procura de oportunidades para ampliar nosso impacto e fazer uma diferença positiva. Seja através da promoção da ética, da paz, da cidadania ou da defesa do meio ambiente, estamos aqui para servir, educar e inspirar.",
+    "Nossos esforços são guiados pelos princípios de legalidade, impessoalidade, moralidade, publicidade e eficiência. Nunca discriminamos com base em raça, sexo, cor, idade, gênero ou crença, e trabalhamos com a firme convicção de que a educação tem o poder de transformar vidas e sociedades."
+  ],
+  test: "kljaklfsjdfkljasdklfjasdlkjflkasdjlk"
 }
