@@ -9,6 +9,7 @@
       class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row"
     >
       <v-flex xs12 md9 lg9 class="">
+        <InstitutionalInfo></InstitutionalInfo>
         <v-card color="#385F73" dark class="mx-4 my-2">
           <v-card-title class="text-h5">
             {{ this.$vuetify.lang.t("$vuetify.organanizationPage.head") }}
@@ -98,7 +99,7 @@
         </v-row> -->
       </v-flex>
       <v-flex xs12 md3 lg3 secondary class="scribble-background">
-        <Aside />
+        <Aside></Aside>
       </v-flex>
     </v-container>
   </div>
@@ -106,10 +107,12 @@
 
 <script>
 import Aside from "../../components/Aside";
+import InstitutionalInfo from "../../components/InstitutionalInfo";
 
 export default {
   components: {
     Aside,
+    InstitutionalInfo
   },
   data() {
     return {

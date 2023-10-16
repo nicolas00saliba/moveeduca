@@ -63,8 +63,11 @@ export default {
     getParagraphs: function () {
       let i = 0;
       const paragraphs = []
-      while(i < 9) {
-        paragraphs.push(this.$vuetify.lang.t(`$vuetify.about[${i++}]`));
+      while(i < Infinity) {
+        let paragraph = this.$vuetify.lang.t(`$vuetify.about[${i}]`);
+        if(paragraph === `$vuetify.about[${i++}]`)// paragraph index not found
+          break;
+        paragraphs.push(paragraph);
       }
       return paragraphs;
     }

@@ -174,6 +174,20 @@ export default {
     head: "Our Organization",
     whatDoWeDo:
       "Our organization has made a difference in the lives of many children and adolescents, working in partnerships with schools, the community, other non-profit organizations and the government. Our main mission is to be a springboard for the personal and intellectual development of those who pass through here. We assist educators, leaders and public figures in the construction of education policies and in training for their implementation.",
+    welcome: "Welcome to",
+    mission: {
+      head: "Mission",
+      content: "Awakening the Consciousness of the Being through education."
+    },
+    vision: {
+      head: "Vision",
+      content: "To be an institution that collaborates with other educational institutions to consolidate 21st century skills¹."
+    },
+    values: "Values",
+    twentyOneCenturySkills: {
+      head: "21st Century Skills according to UNESCO",
+      dialogTitle: "21st Century Skills"
+    }
   },
   roles: {
     president: "President",
@@ -203,4 +217,72 @@ export default {
     "As we move forward, we are always looking for opportunities to amplify our impact and make a positive difference. Whether through promoting ethics, peace, citizenship or defending the environment, we are here to serve, educate and inspire.",
     "Our efforts are guided by the principles of legality, impersonality, morality, publicity and efficiency. We never discriminate on the basis of race, sex, color, age, gender or belief, and we work with the firm conviction that education has the power to transform lives and societies.",
   ],
+  values: [
+    {
+      title: "Good of the whole",
+      description:
+        "All actions are governed and inspired with a focus on the good of humanity, expanding the vision of the whole and understanding the interdependence of Homo Sapiens Sapiens with the environment.",
+    },
+    {
+      title: "Union",
+      description:
+        "All projects and initiatives seek unity between institutions and beings, never choosing between one and the other, encouraging a look at different perspectives.",
+    },
+    {
+      title: "Political Neutrality",
+      description:
+        "The organization remains neutral, without supporting specific candidates, believing that impartiality promotes unity.",
+    },
+    {
+      title: "Respect",
+      description:
+        "Value and recognize the different perspectives of the Being, regardless of their culture, origin, beliefs and socioeconomic situation. This value is guided by active listening, so that the recognition of different perspectives is truly effective. ",
+    },
+    {
+      title: "Internal Collaboration",
+      description:
+        "Clarify the objective of each project and initiative for all employees, ensuring aligned and cohesive actions. Constantly encouraging the exchange of ideas and feedback between employees values effective collaboration and alignment of objectives .",
+    },
+    {
+      title: "Partnerships and Collaboration",
+      description:
+        "Establish and cultivate strategic partnerships with other educational institutions, recognizing that expanded collaboration and interinstitutional cooperation are essential to achieving transformative education in the 21st century. Move&Educa seeks not only to collaborate, but create synergies that enhance positive impacts on education.",
+    },
+    {
+      title: "Integrity",
+      description:
+        "Act with honesty, transparency and ethics in all actions, always seeking coherence in actions based on the mission and values of Move&Educa.",
+    },
+    {
+      title: "Sustainability",
+      description:
+        "Ensuring that the organization's actions and projects are sustainable, considering environmental, social and economic aspects, understanding that today's society is responsible for the legacy left for tomorrow's society.",
+    },
+    {
+      title: "Innovation",
+      description:
+        "Encourage the search for new solutions and approaches to face the challenges of the 21st century.",
+    },
+    {
+      title: "Transparency",
+      description:
+        "Ensuring that all the organization's actions and decisions are transparent to employees, partners and the community.",
+    },
+  ],
+  skills: [
+    "Information Literacy and ICT (Information and Communication Technologies): Ability to seek, evaluate, use and create information using digital technologies.",
+    "Critical Thinking and Problem Solving: Evaluate information critically and make logical judgments; find solutions to complex challenges and problems.",
+    "Communication and Collaboration: Express ideas clearly, work collaboratively and use different forms of communication, including digital.",
+    "Self-learning and Self-Management: Ability to regulate and adjust one's own learning, set goals, manage time and tasks, and work independently.",
+    "Global Consciousness and Citizenship: Understand and act on global issues; respect and value diversity; exercise rights and obligations in an informed and responsible manner.",
+    "Creativity and Innovation: Imagining and creating new ideas, products or solutions to various issues.",
+    "Financial and Economic Literacy: Understand how money works in practice, make informed decisions about resources, and understand the economic consequences of decisions.",
+    "Resilience, Adaptability and Flexibility: Adapting to new and adverse situations, overcoming obstacles and learning from experience.",
+    "Teamwork and Leadership: Working productively with others, taking responsibility, and leading when necessary.",
+    "Ethics and Integrity: Understand and act in accordance with ethical principles, demonstrate honesty and integrity in all actions.",
+  ],
+  comingSoon: {
+    head: "Page coming soon...",
+    content: "See other pages we've already built!"
+  }
 };
