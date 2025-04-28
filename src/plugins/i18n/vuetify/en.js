@@ -207,6 +207,31 @@ export default {
       action1: "Enroll",
       action2: "Know More",
     },
+    formulario: {
+      mover: {
+        title: "Form - Mover Project",
+        fields: {
+          nome: "Full name of volunteer",
+          areaInteresse: "Area of interest",
+          motivo: "Why do you want to participate?",
+          botao: "Submit"
+        }
+      },
+      particular: {
+        title: "Form - Private Class",
+        fields: {
+          nome: "Full name of student",
+          idade: "Age",
+          materia: "Desired subject",
+          botao: "Request Class"
+        }
+      },
+      erro: {
+        titulo: "Choose a valid modality",
+        instrucoes: "You must access a valid URL, such as:",
+        exemplos: ["/formulario?tipo=mover", "/formulario?tipo=particular"]
+      }
+    },
   },
   organanizationPage: {
     head: "Our Organization",
