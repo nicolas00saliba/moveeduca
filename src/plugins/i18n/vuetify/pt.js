@@ -32,16 +32,16 @@ export default {
     name: {
       label: "Seu Nome",
       required: "Seu Nome é obrigatório",
-      notValid: "Nome tem que ser menor que 10 caracteres"
+      notValid: "Nome tem que ser menor que 10 caracteres",
     },
     email: {
       required: "Precisamos do seu email",
-      notValid: "Esse email não parece válido"
+      notValid: "Esse email não parece válido",
     },
     phone: {
       label: "Telefone ou Celular",
       required: "Um telefone brasileiro é necessário",
-      notValid: "O número precisa ter DDD e o mínimo de caracteres"
+      notValid: "O número precisa ter DDD e o mínimo de caracteres",
     },
     item: {
       items: [
@@ -50,20 +50,20 @@ export default {
         "Transparência",
         "Seja Membro",
         "Sou Empresa",
-        "Outros"
+        "Outros",
       ],
       required: "Diga-nos o assunto por favor",
-      label: "Assunto"
+      label: "Assunto",
     },
     agree: {
       message: "Você concorda que possamos te ligar e/ou mandar email?",
-      required: "Para submeter esse formulário você precisa concordar!"
+      required: "Para submeter esse formulário você precisa concordar!",
     },
     actions: {
       submit: "Entre em contato",
       resetInputs: "Resetar formulário",
-      resetValidation: "Resetar validações"
-    }
+      resetValidation: "Resetar validações",
+    },
   },
   cards: {
     aid: {
@@ -208,39 +208,57 @@ export default {
     },
     formulario: {
       mover: {
-        title: 'Formulário Projeto Mover',
+        title: "Formulário Projeto Mover",
         fields: {
-          nome: 'Nome Completo',
-          cpf: 'CPF',
-          cpfInvalido: 'CPF inválido, formato esperado: 000.000.000-00',
-          telefone: 'Telefone',
-          telefoneInvalido: 'Telefone inválido, formato esperado: (00) 00000-0000',
-          rendaPergunta: 'Qual é a faixa de renda familiar?',
-          moradoresPergunta: 'Quantas pessoas moram na residência?',
-          botao: 'Enviar'
+          nome: "Nome Completo",
+          cpf: "CPF",
+          cpfInvalido: "CPF inválido, formato esperado: 000.000.000-00",
+          telefone: "Telefone",
+          telefoneInvalido:
+            "Telefone inválido, formato esperado: (00) 00000-0000",
+          rendaPergunta: "Qual é a faixa de renda familiar?",
+          moradoresPergunta: "Quantas pessoas moram na residência?",
+          botao: "Enviar",
         },
-        rendaOpcoes: [
-          { label: "Até 0,5 salário mínimo (até R$ 706,00)", value: "0-0.5" },
-          { label: "De 0,5 a 1 salário mínimo (R$ 707 a R$ 1.412)", value: "0.5-1" },
-          { label: "De 1 a 2 salários mínimos (R$ 1.413 a R$ 2.824)", value: "1-2" },
-          { label: "De 2 a 3 salários mínimos (R$ 2.825 a R$ 4.236)", value: "2-3" },
-          { label: "Acima de 3 salários mínimos (acima de R$ 4.236)", value: "3+" }
-        ],
-        moradoresOpcoes: [
-          { label: "1 pessoa", value: "1" },
-          { label: "2 pessoas", value: "2" },
-          { label: "3 pessoas", value: "3" },
-          { label: "4 pessoas", value: "4" },
-          { label: "5 pessoas ou mais", value: "5+" }
-        ]
-      }
+        rendaOpcoes: {
+          "0-0": "Até 0,5 salário mínimo (até R$ 706,00)",
+          "0-5": "De 0,5 a 1 salário mínimo (R$ 707 a R$ 1.412)",
+          "1-2": "De 1 a 2 salários mínimos (R$ 1.413 a R$ 2.824)",
+          "2-3": "De 2 a 3 salários mínimos (R$ 2.825 a R$ 4.236)",
+          "3+": "Acima de 3 salários mínimos (acima de R$ 4.236)",
+        },
+        moradoresOpcoes: {
+          "1": "1 pessoa",
+          "2": "2 pessoas",
+          "3": "3 pessoas",
+          "4": "4 pessoas",
+          "5+": "5 pessoas ou mais",
+        },
       },
-      erro: {
-        titulo: "Tipo de formulário inválido.",
-        instrucoes: "Você precisa acessar com uma URL válida, como:",
-        exemplos: ["/formulario?tipo=mover", "/formulario?tipo=particular"]
-      }
+      particular: {
+        title: "Formulário Aula Particular",
+        fields: {
+          nome: "Nome Completo",
+          cpf: "CPF",
+          cpfInvalido: "CPF inválido, formato esperado: 000.000.000-00",
+          telefone: "Telefone",
+          telefoneInvalido:
+            "Telefone inválido, formato esperado: (00) 00000-0000",
+          botao: "Enviar",
+        },
+      },
+      sucesso: {
+        titulo: "Formulário enviado com sucesso!",
+        instrucoes:
+          "Aguarde nosso contato, entraremos em contato o mais rápido possível.",
+      },
     },
+    erro: {
+      titulo: "Tipo de formulário inválido.",
+      instrucoes: "Você precisa acessar com uma URL válida, como:",
+      exemplos: ["/formulario?tipo=mover", "/formulario?tipo=particular"],
+    },
+  },
   organanizationPage: {
     head: "Nossa Organização",
     whatDoWeDo:
@@ -248,17 +266,18 @@ export default {
     welcome: "Bem Vindo a",
     mission: {
       head: "Missão",
-      content: "Despertar a Consciência do Ser através da educação."
+      content: "Despertar a Consciência do Ser através da educação.",
     },
     vision: {
       head: "Visão",
-      content: "Ser uma instituição que colabora com outras instituições de ensino para a consolidação de habilidades do século XXI¹."
+      content:
+        "Ser uma instituição que colabora com outras instituições de ensino para a consolidação de habilidades do século XXI¹.",
     },
     values: "Valores",
     twentyOneCenturySkills: {
       head: "Habilidades do Século XXI de acordo com a UNESCO",
-      dialogTitle: "Habilidades do Século XXI"
-    }
+      dialogTitle: "Habilidades do Século XXI",
+    },
   },
   roles: {
     president: "Presidente",
@@ -354,10 +373,10 @@ export default {
   ],
   comingSoon: {
     head: "Página em construção...",
-    content: "Veja outros páginas que já construímos!"
+    content: "Veja outros páginas que já construímos!",
   },
   utils: {
     about: "Sobre nossa Organização",
-    close: "Fechar"
-  }
-}
+    close: "Fechar",
+  },
+};
