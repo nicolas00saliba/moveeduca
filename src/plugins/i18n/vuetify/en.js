@@ -209,30 +209,44 @@ export default {
     },
     formulario: {
       mover: {
-        title: "Form - Mover Project",
+        title: 'Mover Project Form',
         fields: {
-          nome: "Full name of volunteer",
-          areaInteresse: "Area of interest",
-          motivo: "Why do you want to participate?",
-          botao: "Submit"
-        }
+          nome: 'Full Name',
+          cpf: 'CPF',
+          cpfInvalido: 'Invalid CPF, expected format: 000.000.000-00',
+          telefone: 'Phone Number',
+          telefoneInvalido: 'Invalid phone number, expected format: (00) 00000-0000',
+          rendaPergunta: 'What is your household income?',
+          moradoresPergunta: 'How many people live in your household?',
+          botao: 'Submit'
+        },
+       rendaOpcoes: [
+      { label: "Up to 0.5 minimum wage (up to R$ 706.00)", value: "0-0.5" },
+      { label: "From 0.5 to 1 minimum wage (R$ 707 to R$ 1,412)", value: "0.5-1" },
+      { label: "From 1 to 2 minimum wages (R$ 1,413 to R$ 2,824)", value: "1-2" },
+      { label: "From 2 to 3 minimum wages (R$ 2,825 to R$ 4,236)", value: "2-3" },
+      { label: "Above 3 minimum wages (above R$ 4,236)", value: "3+" }
+      ]
+
       },
       particular: {
-        title: "Form - Private Class",
-        fields: {
-          nome: "Full name of student",
-          idade: "Age",
-          materia: "Desired subject",
-          botao: "Request Class"
-        }
+        title: 'Private Form'
       },
       erro: {
-        titulo: "Choose a valid modality",
-        instrucoes: "You must access a valid URL, such as:",
-        exemplos: ["/formulario?tipo=mover", "/formulario?tipo=particular"]
+        titulo: 'Form error',
+        instrucoes: 'Please use the correct form using ?tipo=...',
+        exemplos: ['?tipo=mover', '?tipo=particular']
       }
     },
-  },
+      particular: {
+        title: 'Private Form'
+      },
+      erro: {
+        titulo: 'Form error',
+        instrucoes: 'Please use the correct form using ?tipo=...',
+        exemplos: ['?tipo=mover', '?tipo=particular']
+      }
+    },
   organanizationPage: {
     head: "Our Organization",
     whatDoWeDo:
@@ -352,4 +366,5 @@ export default {
     about: "About Our Organization",
     close: "Close"
   }
-};
+}
+
