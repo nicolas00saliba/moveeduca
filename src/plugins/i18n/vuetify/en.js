@@ -32,16 +32,16 @@ export default {
     name: {
       label: "Your Name",
       required: "Your Name is required",
-      notValid: "Name must be less than 10 characters"
+      notValid: "Name must be less than 10 characters",
     },
     email: {
       required: "We need your email",
-      notValid: "This email does not appear valid"
+      notValid: "This email does not appear valid",
     },
     phone: {
       label: "Your Phone Number",
       required: "A Brazilian phone is required",
-      notValid: "The number must have DDD and a minimum of characters"
+      notValid: "The number must have DDD and a minimum of characters",
     },
     item: {
       items: [
@@ -50,20 +50,20 @@ export default {
         "Transparency",
         "Become a Member",
         "I am Company",
-        "Others"
+        "Others",
       ],
       required: "Tell us the subject please",
-      label: "Subject"
+      label: "Subject",
     },
     agree: {
       message: "Do you agree that we can call you and/or send you an email?",
-      required: "To submit this form you must agree!"
+      required: "To submit this form you must agree!",
     },
     actions: {
       submit: "Contact us",
       resetInputs: "Reset form",
-      resetValidation: "Reset validations"
-    }
+      resetValidation: "Reset validations",
+    },
   },
   cards: {
     aid: {
@@ -207,6 +207,61 @@ export default {
       action1: "Enroll",
       action2: "Know More",
     },
+    formulario: {
+      mover: {
+        title: "Mover Project Form",
+        fields: {
+          nome: "Full Name",
+          cpf: "CPF",
+          cpfInvalido: "Invalid CPF, expected format: 000.000.000-00",
+          telefone: "Phone Number",
+          telefoneInvalido:
+            "Invalid phone number, expected format: (00) 00000-0000",
+          rendaPergunta: "What is your household income?",
+          moradoresPergunta: "How many people live in your household?",
+          botao: "Submit",
+        },
+        rendaOpcoes: {
+          "0-0": "Up to 0.5 minimum wage (up to R$ 706.00)",
+          "0-5": "From 0.5 to 1 minimum wage (R$ 707 to R$ 1,412)",
+          "1-2": "From 1 to 2 minimum wages (R$ 1,413 to R$ 2,824)",
+          "2-3": "From 2 to 3 minimum wages (R$ 2,825 to R$ 4,236)",
+          "3+": "Above 3 minimum wages (above R$ 4,236)",
+        },
+        moradoresOpcoes: {
+          "1": "1 person",
+          "2": "2 people",
+          "3": "3 people",
+          "4": "4 people",
+          "5+": "5 people or more",
+        },
+      },
+      particular: {
+        title: "Private Class Form",
+        fields: {
+          nome: "Full Name",
+          cpf: "CPF",
+          cpfInvalido: "Invalid CPF, expected format: 000.000.000-00",
+          telefone: "Phone Number",
+          telefoneInvalido:
+            "Invalid phone number, expected format: (00) 00000-0000",
+          botao: "Submit",
+        },
+        erro: {
+          titulo: "Form error",
+          instrucoes: "Please use the correct form using ?tipo=...",
+          exemplos: ["?tipo=mover", "?tipo=particular"],
+        },
+      },
+    },
+    particular: {
+      title: "Private Form",
+    },
+    erro: {
+      titulo: "Form error",
+      instrucoes: "Please use the correct form using ?tipo=...",
+      exemplos: ["?tipo=mover", "?tipo=particular"],
+    },
   },
   organanizationPage: {
     head: "Our Organization",
@@ -215,17 +270,18 @@ export default {
     welcome: "Welcome to",
     mission: {
       head: "Mission",
-      content: "Awakening the Consciousness of the Being through education."
+      content: "Awakening the Consciousness of the Being through education.",
     },
     vision: {
       head: "Vision",
-      content: "To be an institution that collaborates with other educational institutions to consolidate 21st century skills¹."
+      content:
+        "To be an institution that collaborates with other educational institutions to consolidate 21st century skills¹.",
     },
     values: "Values",
     twentyOneCenturySkills: {
       head: "21st Century Skills according to UNESCO",
-      dialogTitle: "21st Century Skills"
-    }
+      dialogTitle: "21st Century Skills",
+    },
   },
   roles: {
     president: "President",
@@ -321,10 +377,10 @@ export default {
   ],
   comingSoon: {
     head: "Page coming soon...",
-    content: "See other pages we've already built!"
+    content: "See other pages we've already built!",
   },
   utils: {
     about: "About Our Organization",
-    close: "Close"
-  }
+    close: "Close",
+  },
 };

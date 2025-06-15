@@ -81,7 +81,10 @@ export default {
           },
           action1: {
             name: () => this.getTextFromI18n("$vuetify.projects.mover.action1"),
-            path: "/comingsoon",
+            path: {
+            path: "/formulario",
+            query: { tipo: "mover" }
+            }
           },
           action2: {
             name: () => this.getTextFromI18n("$vuetify.projects.mover.action2"),
